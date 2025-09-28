@@ -1,0 +1,12 @@
+Execution Time vs. Filesize:
+
+Filesize  | Time (s)
+-----------------------
+1 MB      | 0.745s
+10 MB     | 2.638
+105 MB    | 26.546
+1 GB      | 261.437
+
+The trend in the data shows that the program takes roughly 1/4 of a second per megabyte of data, meaning the relationship is
+directly proportional. The reasoning is that the files are read and written in chunks, so adding more data really just adds
+more iterations of reading and writing.
